@@ -1,9 +1,9 @@
 # Experiment Template with NodeJS
 
 Files:
-1. create-queue.js
-3. restart-queue.js
-4. status-queue.js
+1. [create-queue.js](#create-queue.js)
+3. [restart-queue.js](#restart-queuejs)
+4. [status-queue.js](#status-queuejs)
 5. [worker.js](#workerjs) (**UPDATE THIS FILE**)
 
 
