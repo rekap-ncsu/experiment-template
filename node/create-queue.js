@@ -7,7 +7,7 @@ const parser = new ArgumentParser({
     description: "Script to create a queue from input file"
 });
 
-parser.add_argument("-n", "--name", {
+parser.add_argument("-q", "--queue", {
     required: true,
     type: "str",
     help: "Name of the queue you are about to create"
