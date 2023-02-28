@@ -4,7 +4,7 @@ Files:
 1. create-queue.js
 3. restart-queue.js
 4. status-queue.js
-5. worker.js (**UPDATE THIS FILE**)
+5. [worker.js](#workerjs) (**UPDATE THIS FILE**)
 
 
 ### create-queue.js
