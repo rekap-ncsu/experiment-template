@@ -5,7 +5,7 @@ const parser = new ArgumentParser({
     description: "Script to retry failed jobs inside the queue"
 });
 
-parser.add_argument("-n", "--name", {
+parser.add_argument("-q", "--queue", {
     required: true,
     type: "str",
     help: "Name of the queue you are about to create"
