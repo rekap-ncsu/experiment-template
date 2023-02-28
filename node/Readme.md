@@ -1,10 +1,16 @@
 # Experiment Template with NodeJS
 
-Files:
-1. [create-queue.js](#create-queue.js)
+## Instructions
+Run `npm install` which will install all of the required npm dependencies. That is it!
+
+**Note:** _You will need Redis installed on localhost. You should be able to access the Redis using host `127.0.0.1` and port `6379`. Otherwise, you will need to update connection strings in all of the files._
+
+
+## Files:
+1. [create-queue.js](#create-queuejs)
 3. [restart-queue.js](#restart-queuejs)
 4. [status-queue.js](#status-queuejs)
-5. [worker.js](#workerjs) (**UPDATE THIS FILE**)
+5. [worker.js](#workerjs) (_UPDATE THIS FILE_)
 
 
 ### create-queue.js
