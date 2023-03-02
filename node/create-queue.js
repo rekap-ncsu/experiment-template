@@ -32,7 +32,7 @@ parser.add_argument("-l", "--limit", {
     type: "int"
 })
 
-let {name, file, skip, limit} = parser.parse_args();
+let {queue, file, skip, limit} = parser.parse_args();
 
 // check if the input file exists
 if (fs.existsSync(file) == false) {
@@ -41,7 +41,7 @@ if (fs.existsSync(file) == false) {
 }
 
 // create the queue with specific name
-const queue = new Queue(name);
+const q = new Queue(queue);
 
 const input = fs.createReadStream(file, {encoding: "utf-8"});
 const rl = readline.createInterface({
@@ -62,7 +62,7 @@ rl.on("line", (line) => {
         rl.close();
     } else {
         counter++;
-        queue.add(line, {counter: counter}, {
+        q.add(line, {counter: counter}, {
             jobId: line
         });
         console.log(counter, line);
@@ -70,5 +70,5 @@ rl.on("line", (line) => {
 });
 
 rl.on("close", ()=>{
-    queue.close();
+    q.close();
 });
